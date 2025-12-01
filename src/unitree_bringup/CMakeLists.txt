@@ -36,6 +36,7 @@ find_package(rosbag2_cpp REQUIRED)
 # Install Python script
 install(PROGRAMS
         scripts/g1_test.py
+        scripts/recording.py
         DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

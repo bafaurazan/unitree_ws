@@ -13,7 +13,7 @@ if __name__ == "__main__":
     ChannelFactoryInitialize(1, "wlp4s0")
 
     # ⚙️ Utwórz typ wiadomości IDL
-    String = std_msgs_msg_dds__String_()  # <--- tu były nawiasy!
+    String = std_msgs_msg_dds__String_()  
 
     # 🔄 Subskrybent
     subscriber = ChannelSubscriber("rt/hello_world", String.__class__)

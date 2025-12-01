@@ -26,11 +26,16 @@ python3 ~/unitree_ws/scripts/simulate_python/test/test_unitree_sdk2.py
 # test simulation with ros2
 ```bash
 colcon build
-
+#
+#
+#
 #run simulation
 source ~/unitree_ws/setup_local.sh
 python3 ~/unitree_ws/scripts/simulate_python/unitree_mujoco.py
-
+#
+#
+#
+#
 #visualize data
 source ~/unitree_ws/setup_local.sh
 rqt
@@ -39,7 +44,7 @@ rqt
 source ~/unitree_ws/setup_local.sh
 python3 ~/unitree_ws/scripts/simulate_python/test/hello_world.py 
 
-#test moving all motors (only for simulation)
+#test moving all motors (but be careful! only for simulation)
 source ~/unitree_ws/setup_local.sh
 ros2 run unitree_bringup g1_test.py
 
@@ -53,5 +58,8 @@ ros2 run unitree_ros2_example g1_ankle_swing_example
 
 source ~/unitree_ws/setup_local.sh
 ros2 run unitree_ros2_example g1_low_level_example 
+
+source ~/unitree_ws/setup_local.sh
+ros2 run unitree_ros2_example g1_dual_arm_example   ~/unitree_ws/src/unitree_ros2_example/src/g1/lowlevel/behavior_lib/   motion2 #or "motion" but be careful! default version is too fast
 
 ```

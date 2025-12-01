@@ -4,4 +4,4 @@ log
 .vscode
 *.pt
 .pio
-
+__pycache__
