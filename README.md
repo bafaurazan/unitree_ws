@@ -44,7 +44,7 @@ rqt
 source ~/unitree_ws/setup_local.sh
 python3 ~/unitree_ws/scripts/simulate_python/test/hello_world.py 
 
-#test moving all motors (but be careful! only for simulation)
+#test moving all motors (but be careful! test only for simulation (when robot is on the ground))
 source ~/unitree_ws/setup_local.sh
 ros2 run unitree_bringup g1_test.py
 
