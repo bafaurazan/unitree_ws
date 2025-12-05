@@ -2,6 +2,7 @@
 ## Links
 - [unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco)
 - [unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)
+- [unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)
 
 # prepare simulation
 ```bash
