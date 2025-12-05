@@ -4,6 +4,19 @@
 - [unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)
 - [unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)
 
+# Dependencies
+- ROS2 humble
+
+# setup ros2
+```bash
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "export ROS_DOMAIN_ID=1" >> ~/.bashrc
+
+sudo apt install ros-humble-rmw-cyclonedds-cpp
+sudo apt install ros-humble-rosidl-generator-dds-idl
+sudo apt install libyaml-cpp-dev
+```
+
 # prepare simulation
 ```bash
 
@@ -16,10 +29,13 @@ pip3 install -e .
 pip3 install mujoco
 pip3 install pygame
 
+#Change the lines depending on your network interface in file:
+#~/unitree_ws/setup_local.sh --> ...<NetworkInterface name="wlp4s0"...
+
 #run simulation
 python3 ~/unitree_ws/scripts/simulate_python/unitree_mujoco.py
 
-#test
+#test in next terminal
 python3 ~/unitree_ws/scripts/simulate_python/test/test_unitree_sdk2.py 
 
 ```
@@ -35,6 +51,8 @@ source ~/unitree_ws/setup_local.sh
 python3 ~/unitree_ws/scripts/simulate_python/unitree_mujoco.py
 #
 #
+#
+#and in next terminals run:
 #
 #
 #visualize data
